@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nilai Akhir Siswa</title>
+</head>
+<body>
+ <h1>Perhitungan Nilai Akhir Siswa</h1>
+
+    <script>
+        var nama = "Andi";
+        var nilaiTugas = 80;
+        var nilaiUTS = 75;
+        var nilaiUAS = 90;
+
+        var nilaiAkhir = (nilaiTugas * 30 / 100) +
+                         (nilaiUTS * 30 / 100) +
+                         (nilaiUAS * 40 / 100);
+
+        
+        var status;
+
+        if (nilaiAkhir >= 75) {
+            status = "LULUS";
+        } else {
+            status = "TIDAK LULUS";
+        }
+
+
+        console.log("Nama: " + nama);
+        console.log("Nilai Akhir: " + nilaiAkhir);
+        console.log("Status: " + status);
+
+        document.write("Nama: " + nama + "<br>");
+        document.write("Nilai Akhir: " + nilaiAkhir + "<br>");
+        document.write("Status: " + status + "<br>");
+    </script>
+
+</body>
+</html>
